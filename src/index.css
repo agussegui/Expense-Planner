@@ -41,6 +41,14 @@ h2 {
     background-color: var(--blanco);
     padding: 4rem;
     border-radius: 1.2rem;
+    
+}
+
+@media(max-width:414px) {
+    .sombra{
+        padding: 1rem;
+
+    }
 }
 
 header {
@@ -207,7 +215,7 @@ header h1 {
 }
 .contenido-presupuesto p.negativo,
 .contenido-presupuesto p.negativo span {
-    color: red;
+    color: #DC2626;
 }
 .contenido-presupuesto span {
     font-weight: 900;

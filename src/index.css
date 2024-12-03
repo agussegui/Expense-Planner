@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
     --azul: #0a306e;
     --blanco: #ffffff;
@@ -13,7 +17,7 @@ body {
     background-color: var(--gris-claro);
 }
 html {
-    font-size: 62.5%;
+    font-size: 65.5%;
     box-sizing: border-box;
 }
 *,
@@ -341,7 +345,7 @@ main {
     cursor: pointer;
 }
 
-.modal {
+.modal-change {
     position: absolute;
     background-color: rgba(33, 33, 33, 0.92);
     top: 0;
@@ -349,18 +353,18 @@ main {
     right: 0;
     bottom: 0;
 }
-.modal .cerrar-modal {
+.modal-change .cerrar-modal {
     position: absolute;
     right: 3rem;
     top: 3rem;
     width: 3rem;
     height: 3rem;
 }
-.modal .cerrar-modal img {
+.modal-change .cerrar-modal img {
     width: 100%;
 }
 
-.modal .formulario {
+.modal-change .formulario {
     max-width: 80rem;
     width: 40rem;
     transition-property: all;
@@ -368,23 +372,23 @@ main {
     transition-timing-function: ease-in;
     opacity: 0;
 }
-.modal label {
+.modal-change label {
     color: var(--blanco);
 }
-body .modal {
+body .modal-change {
     overflow: hidden;
 }
 
-.modal .formulario.animar {
+.modal-change .formulario.animar {
     position: relative;
     opacity: 1;
 }
 
-.modal .formulario.cerrar {
+.modal-change .formulario.cerrar {
     opacity: 0;
 }
 
-.modal label {
+.modal-change label {
     text-align: left;
 }
 
@@ -412,3 +416,26 @@ body .modal {
     font-size: 2.4rem;
     text-align: right;
 }
+
+.boton-cancel-app{
+    display: block;
+    background-color: rgb(220, 220, 220);
+    font-size: 15px;
+    color: rgb(5, 5, 5);
+    padding: 8px;
+    margin: 2px;
+    border-radius: 4px;
+}
+.boton-confirm-app{
+    display: block;
+    background-color: #cf0b0b;
+    font-size: 15px;
+    color: white;
+    padding: 8px;
+    margin: 2px;
+    border-radius: 4px;
+}
+
+  
+
+  
